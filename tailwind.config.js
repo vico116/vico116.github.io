@@ -1,13 +1,13 @@
 module.exports = {
-  content:[
-    './_includes/**/*.html',
-    './_layouts/**/*.html',
-    './_posts/*.md',
-    './*.html',
+  content: [
+    "./_includes/**/*.html",
+    "./_layouts/**/*.html",
+    "./_posts/*.md",
+    "./*.html",
   ],
   theme: {
-    extend: {}
+    extend: {},
   },
   variants: {},
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
